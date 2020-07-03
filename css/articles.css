@@ -245,4 +245,19 @@ img {
   .title-h3 {
     font-size: 18px;
   }
+  .title-h2 {
+    font-size: 28px;
+  }
+  .article-head {
+    height: 60px;
+  }
+  .articles .head-title .title-h2 {
+    margin-left: 100px;
+  }
+  .close-button img {
+    max-height: 60px;
+  }
+  .close-button {
+    width: 70px;
+  }
 }
