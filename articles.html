@@ -15,7 +15,6 @@
     <!-- Style 
         ========================================= -->
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/articles.css" />
   </head>
   <body>
     <!-- Layout
@@ -38,15 +37,15 @@
 
         <!-- Article body
         ==================================================== -->
-        <div class="article-body">
+        <div class="article-body my-4 my-lg-0">
           <div class="article-body-container">
             <div class="row">
               <div class="col-xl-9 col-lg-10">
                 <div class="row">
-                  <div class="col-md-6">
-                    <div class="d-flex padding-bottom-30">
-                      <div class="flex-grow-1">
-                        <div class="text-content text-right">
+                  <div class="col-md-6 mt-md-0 mt-5">
+                    <div class="row padding-bottom-30">
+                      <div class="col-sm-7 col-8">
+                        <div class="text-content text-md-right">
                           <h3 class="title-h3">
                             Portable Loo – A simple dignified solution
                           </h3>
@@ -61,7 +60,9 @@
                           </a>
                         </div>
                       </div>
-                      <div class="pl-4">
+                      <div
+                        class="col-sm-3 col-4 col-md-5 order-first order-md-0"
+                      >
                         <div class="module-image">
                           <img
                             src="./images/himanshu-srivastav.png"
@@ -70,9 +71,9 @@
                         </div>
                       </div>
                     </div>
-                    <div class="d-flex">
-                      <div class="flex-grow-1">
-                        <div class="text-content text-right">
+                    <div class="row">
+                      <div class="col-sm-7 col-8">
+                        <div class="text-content text-md-right">
                           <h3 class="title-h3">
                             Renewable power invention replace thermal power
                           </h3>
@@ -87,14 +88,16 @@
                           </a>
                         </div>
                       </div>
-                      <div class="pl-4">
+                      <div
+                        class="col-sm-3 col-4 col-md-5 order-first order-md-0"
+                      >
                         <div class="module-image">
                           <img src="./images/tumblr.png" alt="image" />
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                  <div class="col-md-6 order-first order-md-last my-md-0 my-5">
                     <div class="img-container">
                       <img src="./images/tumblr_2.png" alt="image" />
 
@@ -115,28 +118,38 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3 col-lg-2">
+              <div class="col-xl-3 col-lg-2 mt-4 mt-lg-0">
                 <div class="row">
-                  <div class="col-xl-8 col-lg-12">
-                    <div class="content-right-side mt-lg-0 mt-md-5">
-                      <div class="right-side-image module-image">
-                        <img src="./images/action-ai-android.png" alt="image" />
+                  <div class="col-md-6 col-lg-12 col-xl-7 mb-0 mb-lg-5">
+                    <div class="row">
+                      <div class="col-sm-3 col-4 col-md-5 col-lg-12">
+                        <div class="module-image">
+                          <img
+                            src="./images/action-ai-android.png"
+                            alt="image"
+                          />
+                        </div>
                       </div>
-                      <div class="text-content">
-                        <h3 class="title-h3">
-                          The Dark Side of Wikipedia
-                        </h3>
-                        <a href="#" class="read-more-link"
-                          >Read More
-                          <i
-                            ><img src="./images/icon_right-arrow.png" alt="#"
-                          /></i>
-                        </a>
+                      <div class="col-md-7 col-sm-7 col-8 col-lg-12">
+                        <div class="text-content">
+                          <h3 class="title-h3">
+                            The Dark Side of Wikipedia
+                          </h3>
+                          <a href="#" class="read-more-link"
+                            >Read More
+                            <i
+                              ><img src="./images/icon_right-arrow.png" alt="#"
+                            /></i>
+                          </a>
+                        </div>
                       </div>
-                      <button class="default-btn">Explore More</button>
                     </div>
                   </div>
-                  <div class="col-md-4"></div>
+                  <div
+                    class="col-md-6 col-lg-12 d-flex align-items-center justify-content-end justify-content-lg-start my-3"
+                  >
+                    <button class="default-btn">Explore More</button>
+                  </div>
                 </div>
               </div>
             </div>
@@ -145,15 +158,15 @@
         <!-- Article body end -->
 
         <!-- Explore start
-        ================================================= -->
+                        ================================================= -->
         <div class="explore">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-3"></div>
-              <div class="col-6">
+              <div class="col-md-2 col-lg-2"></div>
+              <div class="col-md-8 col-lg-7 mx-auto">
                 <div class="explore-content">
                   <div class="row">
-                    <div class="col-3 p-0">
+                    <div class="col-3 p-0 left-border">
                       <a href="./articles.html" class="content-link active">
                         <div class="icon">
                           <img src="./images/icon_articles.png" alt="icon" />
@@ -188,7 +201,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3"></div>
+              <div class="col-md-2 col-lg-2"></div>
             </div>
           </div>
         </div>
@@ -196,48 +209,64 @@
       </div>
       <!-- Article end  -->
 
-      <!-- Footer section
-            ========================================= -->
-      <footer>
-        <div class="container-fluid">
-          <div class="footer-padding">
-            <div class="">
-              <div class="web-name">NOFEL</div>
-              <p class="copyright-text">©copyrights. 2019. by nofelizz</p>
+      <!-- footer
+            ================================================== -->
+      <footer class="my-5 my-md-0">
+        <div class="main-container">
+          <div class="row">
+            <div class="col-md-5 col-lg-4">
+              <img
+                src="./images/NOFEL-black.png"
+                class="main-logo"
+                alt="logo"
+              />
+              <p class="footer-paragraph">©copyrights. 2019. by nofelizz</p>
             </div>
-            <div class="">Contact</div>
-            <div class="">Terms and Condition</div>
-            <div class="">Privacy policy</div>
-            <div class="footer-icons">
-              <img
-                src="./images/facebook-logo.png"
-                alt="facebook-logo"
-                sizes=""
-                srcset=""
-              />
-              <img
-                src="./images/twitter.png"
-                alt="twitter"
-                sizes=""
-                srcset=""
-              />
-              <img
-                src="./images/instagram.png"
-                alt="instagram"
-                sizes=""
-                srcset=""
-              />
-              <img
-                src="./images/youtube.png"
-                alt="youtube"
-                sizes=""
-                srcset=""
-              />
+            <div class="col-md-7 col-lg-8 d-flex align-items-center">
+              <div class="row w-100">
+                <div class="col-lg-9 col-md-6 mb-4 mb-md-0">
+                  <div class="row">
+                    <div class="col-lg-4 pb-md-2 pb-lg-0">
+                      <a href="#" class="footer-link">Contact</a>
+                    </div>
+                    <div class="col-lg-4 pb-md-2 pb-lg-0">
+                      <a href="#" class="footer-link">Terms and Condition</a>
+                    </div>
+                    <div class="col-lg-4">
+                      <a href="#" class="footer-link">Privacy Policy</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-8">
+                  <ul class="footer-social-icons">
+                    <li>
+                      <a href="#"
+                        ><img src="./images/facebook-logo.png" alt="icon"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/twitter.png" alt="icon"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/instagram.png" alt="icon"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/youtube.png" alt="icon"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </footer>
-      <!-- Footer end -->
+      <!-- footer end -->
     </div>
   </body>
 </html>

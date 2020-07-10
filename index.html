@@ -3,64 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nofel</title>
+    <!-- Bootstrap 
+            ========================================= -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
-
-    <link rel="stylesheet" href="./css/articles.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Style 
+            ========================================= -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Nofel</title>
   </head>
-
   <body>
-    <div class="home-page">
-      <div class="home-page-section1">
-        <nav>
-          <div class="container-fluid">
-            <header>
-              <div class="web-name">NOFEL</div>
-              <div class="web-right-nav">
-                <div class="search-icon">
-                  <img
-                    src="./images/icon_musica-searcher.png"
-                    alt="icon_musica-searcher"
-                  />
-                </div>
-                <div class="menu-and-icon">
-                  <span class="menu-icon"
-                    ><img src="./images/icon_menu-button.png" alt="menu-button"
-                  /></span>
-                  <div class="menu-text">MENU</div>
-                </div>
-              </div>
-            </header>
-          </div>
-        </nav>
-        <div class="web-middel-text">
-          <div class="middel-text">
-            <div>
-              <h1 class="title-h1">Nofel</h1>
-              <p>
-                "Life is infinitely stranger than anything which the mind of man
-                could invent."-Arthur Conan Doyle
-              </p>
+    <div class="layout">
+      <!-- header section
+      ================================================= -->
+      <header>
+        <!-- navigation -->
+        <div class="main-container">
+          <nav class="navbar navbar-light p-0">
+            <a class="navbar-brand" href="#">
+              <img src="./images/NOFEL.png" class="main-logo" alt="logo" />
+            </a>
+            <div class="right-side">
+              <button class="button d-none d-lg-inline">
+                <img src="images/icon_musica-searcher.png" alt="icon" />
+              </button>
+              <button class="button d-none d-lg-inline">En</button>
+              <button class="button menu-button mr-0">
+                <img src="images/icon_menu-button.png" alt="icon" /><span
+                  class="d-none d-md-inline"
+                  >MENU
+                </span>
+              </button>
             </div>
+          </nav>
+        </div>
+        <!-- navigation end -->
+
+        <!-- text slider 
+        =================================================-->
+        <div class="slider-container">
+          <div class="slider-content">
+            <h1 class="title-h1">Nofel</h1>
+            <p class="paragraph">
+              "Life is infinitely stranger than anything which the mind of man
+              could invent." – Arthur Conan Doyle
+            </p>
           </div>
         </div>
+        <!-- text slider end -->
 
         <!-- Explore start
                 ================================================= -->
         <div class="explore">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-3"></div>
-              <div class="col-6">
+              <div class="col-md-2 col-lg-2"></div>
+              <div class="col-md-8 col-lg-7 mx-auto">
                 <div class="explore-content">
                   <div class="row">
-                    <div class="col-3 p-0">
+                    <div class="col-3 p-0 left-border">
                       <a href="./articles.html" class="content-link">
                         <div class="icon">
                           <img src="./images/icon_articles.png" alt="icon" />
@@ -95,55 +100,72 @@
                   </div>
                 </div>
               </div>
-              <div class="col-3"></div>
+              <div class="col-md-2 col-lg-2"></div>
             </div>
           </div>
         </div>
         <!-- Explore -->
-      </div>
+      </header>
+      <!-- header end  -->
 
-      <!-- Footer section
-      ========================================= -->
-      <footer>
-        <div class="container-fluid">
-          <div class="footer-padding">
-            <div class="">
-              <div class="web-name">NOFEL</div>
-              <p class="copyright-text">©copyrights. 2019. by nofelizz</p>
+      <!-- footer
+      ================================================== -->
+      <footer class="my-5 my-md-0">
+        <div class="main-container">
+          <div class="row">
+            <div class="col-md-5 col-lg-4">
+              <img
+                src="./images/NOFEL-black.png"
+                class="main-logo"
+                alt="logo"
+              />
+              <p class="footer-paragraph">©copyrights. 2019. by nofelizz</p>
             </div>
-            <div class="">Contact</div>
-            <div class="">Terms and Condition</div>
-            <div class="">Privacy policy</div>
-            <div class="footer-icons">
-              <img
-                src="./images/facebook-logo.png"
-                alt="facebook-logo"
-                sizes=""
-                srcset=""
-              />
-              <img
-                src="./images/twitter.png"
-                alt="twitter"
-                sizes=""
-                srcset=""
-              />
-              <img
-                src="./images/instagram.png"
-                alt="instagram"
-                sizes=""
-                srcset=""
-              />
-              <img
-                src="./images/youtube.png"
-                alt="youtube"
-                sizes=""
-                srcset=""
-              />
+            <div class="col-md-7 col-lg-8 d-flex align-items-center">
+              <div class="row w-100">
+                <div class="col-lg-9 col-md-6 mb-4 mb-md-0">
+                  <div class="row">
+                    <div class="col-lg-4 pb-md-2 pb-lg-0">
+                      <a href="#" class="footer-link">Contact</a>
+                    </div>
+                    <div class="col-lg-4 pb-md-2 pb-lg-0">
+                      <a href="#" class="footer-link">Terms and Condition</a>
+                    </div>
+                    <div class="col-lg-4">
+                      <a href="#" class="footer-link">Privacy Policy</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 col-xs-8">
+                  <ul class="footer-social-icons">
+                    <li>
+                      <a href="#"
+                        ><img src="./images/facebook-logo.png" alt="icon"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/twitter.png" alt="icon"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/instagram.png" alt="icon"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/youtube.png" alt="icon"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </footer>
-      <!-- Footer end -->
+      <!-- footer end -->
     </div>
   </body>
 </html>
