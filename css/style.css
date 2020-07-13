@@ -222,7 +222,7 @@ footer .footer-social-icons {
 
 /* Article 
 ======================================================*/
-.articles {
+.home-popup {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -233,7 +233,7 @@ footer .footer-social-icons {
   flex-direction: column;
   justify-content: space-between;
 }
-.article-head {
+.home-popup-head {
   height: 90px;
   display: flex;
 }
@@ -250,45 +250,45 @@ footer .footer-social-icons {
 .close-button img {
   width: 21px;
 }
-.articles .head-title {
+.home-popup .head-title {
   display: flex;
   align-items: flex-end;
 }
-.articles .head-title .title-h2 {
+.home-popup .head-title .title-h2 {
   margin-left: 140px;
 }
 /* Article head end */
 
 /* Article body */
-.article-body .text-content .title-h3 {
+.home-article-gallery .text-content .title-h3 {
   padding-top: 25px;
   margin-bottom: 20px;
 }
-.article-body .article-body-container {
+.home-article-gallery .home-article-gallery-container {
   padding: 0 90px;
   max-width: 1940px;
   margin: 0 auto;
 }
-.article-body .module-image img {
+.home-article-gallery .module-image img {
   width: 240px;
 }
-.article-body .read-more-link {
+.home-article-gallery .read-more-link {
   text-decoration: none;
   font-size: 18px;
   letter-spacing: 0.9px;
   color: #fff;
 }
-.article-body .read-more-link:hover {
+.home-article-gallery .read-more-link:hover {
   text-decoration: underline;
 }
 .read-more-link i img {
   width: 7px;
 }
 
-.article-body .img-container {
+.home-article-gallery .img-container {
   position: relative;
 }
-.article-body .overlay-text {
+.home-article-gallery .overlay-text {
   position: absolute;
   width: 90%;
   bottom: -90px;
@@ -297,7 +297,7 @@ footer .footer-social-icons {
   padding-left: 30px;
 }
 /* explore modify */
-.articles .explore .content-link {
+.home-articles .explore .content-link {
   border-color: #6797f7;
 }
 .explore .content-link.active {
@@ -334,20 +334,20 @@ footer .footer-social-icons {
     letter-spacing: 1px;
     line-height: 28px;
   }
-  .article-body .article-body-container {
+  .home-article-gallery .home-article-gallery-container {
     padding: 0 40px;
   }
-  .article-body .text-content .title-h3 {
+  .home-article-gallery .text-content .title-h3 {
     padding-top: 12px;
     margin-bottom: 12px;
   }
-  .article-body .read-more-link {
+  .home-article-gallery .read-more-link {
     font-size: 16px;
   }
   .read-more-link i img {
     width: 6px;
   }
-  .article-body .overlay-text {
+  .home-article-gallery .overlay-text {
     bottom: -68px;
   }
 }
@@ -377,10 +377,10 @@ footer .footer-social-icons {
   .title-h2 {
     font-size: 28px;
   }
-  .article-head {
+  .home-popup-head {
     height: 60px;
   }
-  .articles .head-title .title-h2 {
+  .home-popup .head-title .title-h2 {
     margin-left: 100px;
   }
   .close-button img {
@@ -445,6 +445,9 @@ footer .footer-social-icons {
 }
 /* max-width 992px */
 @media only screen and (max-width: 992px) {
+  .home-popup {
+    height: auto;
+  }
   .main-container {
     padding: 0 70px;
   }
@@ -472,18 +475,15 @@ footer .footer-social-icons {
     padding: 0 40px;
   }
   /* articles page */
-  .articles {
-    height: auto;
-  }
-  .article-body .overlay-text {
+  .home-article-gallery .overlay-text {
     padding-top: 10px;
   }
-  .articles .head-title {
+  .home-articles .head-title {
     width: 100%;
     justify-content: flex-end;
     margin-right: 40px;
   }
-  .article-body .text-content .title-h3 {
+  .home-article-gallery .text-content .title-h3 {
     padding-top: 5px;
   }
 }
@@ -495,23 +495,23 @@ footer .footer-social-icons {
   .main-container {
     padding: 0 20px;
   }
-  /* .articles */
-  .article-body .text-content .title-h3 {
+  /* .home-articles */
+  .home-article-gallery .text-content .title-h3 {
     padding-top: 0;
     margin-bottom: 5px;
     font-size: 16px;
     font-weight: 600;
   }
-  .article-body .read-more-link {
+  .home-article-gallery .read-more-link {
     font-size: 14px;
   }
   .read-more-link i img {
     width: 5px;
   }
-  .article-body .article-body-container {
+  .home-article-gallery .home-article-gallery-container {
     padding: 0 20px;
   }
-  .articles .head-title {
+  .home-popup .head-title {
     margin-right: 20px;
   }
 }
