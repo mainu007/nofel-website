@@ -349,6 +349,15 @@ footer .footer-social-icons {
 .home-articles .explore .content-link {
    border-color: #6797f7;
 }
+.home-articles .explore .content-link * {
+   opacity: 0.6;
+}
+.home-articles .explore .content-link:hover * {
+   opacity: 1;
+}
+.home-articles .explore .content-link.active * {
+   opacity: 1;
+}
 /*Home Article end */
 
 /* Home Projects
@@ -393,15 +402,8 @@ footer .footer-social-icons {
 .home-projects .explore .content-link.active {
    box-shadow: 0px 5px 50px #2c324812;
 }
-
-.explore .content-link.active::before {
-   content: "";
-   width: 100%;
-   height: 10px;
-   background: #fff;
-   position: absolute;
-   top: 0;
-   left: 0;
+.home-projects .explore .content-link.active * {
+   opacity: 1;
 }
 /* home projects end */
 
@@ -432,6 +434,15 @@ footer .footer-social-icons {
 /* explore modify */
 .home-inventions .explore .content-link {
    border-color: #5dd48c;
+}
+.home-inventions .explore .content-link * {
+   opacity: 0.6;
+}
+.home-inventions .explore .content-link:hover * {
+   opacity: 1;
+}
+.home-inventions .explore .content-link.active * {
+   opacity: 1;
 }
 /* home Inventions end */
 
