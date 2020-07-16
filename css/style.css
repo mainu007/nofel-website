@@ -277,7 +277,7 @@ footer .footer-social-icons {
    justify-content: space-between;
 }
 .home-popup-head {
-   height: 90px;
+   min-height: 90px;
    display: flex;
 }
 .close-button {
@@ -446,6 +446,38 @@ footer .footer-social-icons {
 }
 /* home Inventions end */
 
+/* home musics
+============================================= */
+.home-musics {
+   background: #ff6464;
+}
+.home-musics .close-button {
+   background: #ff8787;
+}
+.home-musics .close-button:hover {
+   background: #ff6464;
+}
+.home-musics-container {
+   max-width: 1480px;
+   margin: 0 auto;
+   padding: 0 40px;
+}
+
+/* explore modify */
+.home-musics .explore .content-link {
+   border-color: #e88a8a;
+}
+.home-musics .explore .content-link * {
+   opacity: 0.6;
+}
+.home-musics .explore .content-link:hover * {
+   opacity: 1;
+}
+.home-musics .explore .content-link.active * {
+   opacity: 1;
+}
+/* home musics end */
+
 @media (max-width: 1352px) {
    .home-inventions-gallery {
       height: auto !important;
@@ -525,7 +557,7 @@ footer .footer-social-icons {
       font-size: 28px;
    }
    .home-popup-head {
-      height: 60px;
+      min-height: 60px;
    }
    .home-popup .head-title .title-h2 {
       margin-left: 100px;
