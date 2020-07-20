@@ -16,6 +16,15 @@ img {
    color: #fff;
    margin-bottom: 25px;
 }
+.title-h2 {
+   font-family: "Playfair Display", serif;
+   font-size: 48px;
+   line-height: 85px;
+   font-weight: 700;
+   color: #262a37;
+   letter-spacing: 0;
+   margin-bottom: 25px;
+}
 .title-h3 {
    font-family: "Playfair Display", serif;
    font-weight: 700;
@@ -508,7 +517,48 @@ footer .footer-social-icons {
    color: #fff;
    font-size: 24px;
 }
-
+/* article post */
+.articles-post-container {
+   max-width: 1680px;
+   margin-left: auto;
+}
+.articles-post-container .post-date {
+   width: 122px;
+   padding: 25px;
+   border: 1px solid #b3b7c4;
+   font-size: 20px;
+   font-weight: 600;
+   line-height: 30px;
+   letter-spacing: 0.2px;
+   color: #6d7384;
+   margin-top: 30px;
+}
+.post-content .post-meta {
+   font-size: 18px;
+   line-height: 30px;
+   color: #969aa8;
+   letter-spacing: 0;
+   margin-bottom: 35px;
+}
+.post-content .paragraph {
+   width: 66%;
+   font-size: 18px;
+   line-height: 36px;
+   color: #5d6070;
+   letter-spacing: 0.18px;
+   font-weight: 400;
+   margin-bottom: 40px;
+}
+.post-carousel .carousel-control-prev {
+   top: auto;
+   padding: 20px;
+}
+.post-carousel .carousel-control-next {
+   top: auto;
+   right: auto;
+   left: 80px;
+   padding: 20px;
+}
 @media (max-width: 1352px) {
    .home-inventions-gallery {
       height: auto !important;
