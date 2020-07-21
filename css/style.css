@@ -103,6 +103,7 @@ li {
    outline: none;
    background: #ff6666;
    color: #fff;
+   font-weight: 500;
 }
 .default-btn:hover {
    background: #ff5050;
@@ -521,8 +522,9 @@ footer .footer-social-icons {
 .articles-post-container {
    max-width: 1680px;
    margin-left: auto;
+   margin-bottom: 160px;
 }
-.articles-post-container .post-date {
+.post-date {
    width: 122px;
    padding: 25px;
    border: 1px solid #b3b7c4;
@@ -549,16 +551,149 @@ footer .footer-social-icons {
    font-weight: 400;
    margin-bottom: 40px;
 }
-.post-carousel .carousel-control-prev {
-   top: auto;
-   padding: 20px;
+
+.articles-post-container .post-carousel .carousel-control-prev,
+.articles-post-container .post-carousel .carousel-control-next {
+   position: static;
+   float: left;
+   opacity: 1;
 }
-.post-carousel .carousel-control-next {
-   top: auto;
-   right: auto;
-   left: 80px;
-   padding: 20px;
+.post-carousel .carousel-button {
+   width: auto;
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   background: #fff;
 }
+.post-carousel .arrow-icons {
+   font-size: 40px;
+   color: #707070;
+   background: #fff;
+   padding: 20px 40px;
+}
+.post-carousel .carousel-control-prev .arrow-icons::after {
+   content: "";
+   width: 1px;
+   height: 60%;
+   background: #eadcdc;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+/*  */
+.seconde-post {
+   margin-bottom: 100px;
+}
+.seconde-post .post-content .paragraph {
+   width: 90%;
+}
+.seconde-post .title-h4 {
+   letter-spacing: 0.48px;
+   color: #262a37;
+   margin-bottom: 50px;
+}
+.seconde-post .list-number {
+   font-size: 24px;
+   line-height: 40px;
+   font-weight: 600;
+   color: #a9aec1;
+   text-align: right;
+   padding-right: 20px;
+}
+
+@media (max-width: 1700px) {
+   .articles-post-container {
+      max-width: 1450px;
+   }
+   .title-h2 {
+      font-size: 40px;
+      line-height: 55px;
+   }
+   .post-content .paragraph {
+      width: 85%;
+   }
+}
+@media (max-width: 1500px) {
+   .articles-post-container {
+      padding-left: 60px;
+   }
+   .post-content .post-meta {
+      margin-bottom: 20px;
+   }
+   .post-content .paragraph {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 25px;
+   }
+}
+@media (max-width: 1199px) {
+   .title-h2 {
+      font-size: 35px;
+      line-height: 50px;
+      margin-bottom: 20px;
+   }
+   .articles-post-container {
+      padding-left: 40px;
+   }
+   .post-date {
+      width: 100%;
+      border: none;
+      padding: 10px 0;
+      font-size: 16px;
+   }
+   /*  */
+   .seconde-post .title-h4 {
+      margin-bottom: 40px;
+   }
+   .seconde-post .list-number {
+      font-size: 18px;
+      line-height: 30px;
+   }
+}
+@media (max-width: 991px) {
+   .articles-post-container {
+      margin-bottom: 60px;
+   }
+   .seconde-post {
+      margin-bottom: 50px;
+   }
+}
+@media (max-width: 767px) {
+   .title-h1 {
+      font-size: 45px;
+   }
+   .title-h2 {
+      font-size: 28px;
+      line-height: 40px;
+   }
+   .articles-header {
+      height: auto;
+      padding-bottom: 50px;
+   }
+   .articles-header .slider-container {
+      padding: 0 15px;
+   }
+   .articles-post-container {
+      padding: 0 15px;
+   }
+   .post-date {
+      font-size: 14px;
+   }
+   .post-content .post-meta {
+      font-size: 16px;
+   }
+   .post-content .paragraph {
+      width: 100%;
+   }
+   .post-carousel .arrow-icons {
+      font-size: 30px;
+   }
+}
+
+/* Articles post end */
+
 @media (max-width: 1352px) {
    .home-inventions-gallery {
       height: auto !important;
@@ -577,7 +712,7 @@ footer .footer-social-icons {
 @media only screen and (max-width: 1600px) {
    /* default style */
    .default-btn {
-      width: 175px;
+      width: 185px;
       font-size: 14px;
       padding: 16px 28px;
       letter-spacing: 1.4px;
@@ -657,9 +792,6 @@ footer .footer-social-icons {
    .navbar {
       height: 90px;
    }
-   .slider-content {
-      width: 400px;
-   }
    .index-header .title-h1 {
       font-size: 80px;
    }
@@ -709,7 +841,7 @@ footer .footer-social-icons {
    .home-popup {
       height: auto;
    }
-   .slider-content .title-h1 {
+   .index-header .title-h1 {
       font-size: 70px;
       margin-bottom: 12px;
    }
