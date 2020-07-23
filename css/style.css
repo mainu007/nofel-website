@@ -1,7 +1,8 @@
 /* Font input */
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Playfair+Display:wght@400;500;600;700;900&family=Poppins:wght@400;500;600;700;900&display=swap");
 /* font-family: 'Poppins', sans-serif; */
 /* font-family: "Playfair Display", serif; */
+/* font-family: 'PT Serif', serif; */
 
 /* default style */
 img {
@@ -84,15 +85,6 @@ li {
    margin: 0;
 }
 
-.button {
-   font-size: 16px;
-   padding: 20px 35px;
-   letter-spacing: 1.6px;
-   border: none;
-   outline: none;
-   background-color: transparent;
-   color: #fff;
-}
 .default-btn {
    max-width: 100%;
    width: 190px;
@@ -112,13 +104,8 @@ li {
    padding-bottom: 30px;
 }
 
-/* main logo */
-.main-logo {
-   max-width: 100%;
-}
-
 /* Index 
-------------------------------------------------- */
+===================================================== */
 header.index-header {
    width: 100%;
    height: 100vh;
@@ -134,13 +121,36 @@ header.index-header {
    margin: 0 auto;
    padding: 0 40px;
 }
-/* navbar */
+/* navbar
+===================================================== */
 .navbar {
    height: 144px;
 }
-.navbar .button {
+/* main logo */
+.brand-logo {
+   font-family: "PT Serif", serif;
+   font-size: 30px;
+   line-height: 28px;
+   font-weight: 700;
+   letter-spacing: 18px;
+   color: #fff;
+}
+.articles-details-header .brand-logo,
+footer .brand-logo {
+   color: #373737;
+}
+.nav-widget-button {
+   font-size: 16px;
    padding: 5px;
    margin: 0 15px;
+   color: #fff;
+}
+.articles-details-header .navbar .nav-widget-button {
+   color: #373737;
+}
+.articles-details-header .navbar .search-icon {
+   font-size: 21px;
+   color: #8a8a8a;
 }
 .navbar .menu-button {
    font-size: 26px;
@@ -149,7 +159,10 @@ header.index-header {
    color: #fff;
 }
 .navbar .menu-button span {
-   margin-left: 20px;
+   margin-left: 12px;
+}
+.articles-details-header .navbar .menu-button {
+   font-weight: 500;
 }
 /* navbar end */
 
@@ -769,6 +782,81 @@ footer .footer-social-icons {
    }
 }
 /* Articles end */
+
+/* Articles Details 
+============================================== */
+.articles-details .title-h3 {
+   letter-spacing: 1.5px;
+   color: #323743;
+   margin-bottom: 40px;
+}
+.details-post-date {
+   font-size: 20px;
+   font-weight: 500;
+   margin-bottom: 20px;
+   color: #588aee;
+}
+.big-c {
+   float: left;
+   font-size: 48px;
+   letter-spacing: 0;
+   color: #626978;
+   margin-right: 10px;
+}
+.articles-details .paragraph {
+   width: 100%;
+   letter-spacing: 0.36px;
+   color: #656b78;
+}
+.articles-check-icon {
+   line-height: 36px;
+   font-size: 12px;
+   color: #588aee;
+   padding-right: 10px;
+}
+.articles-details .title-h4 {
+   font-size: 22px;
+   line-height: 40px;
+   letter-spacing: 1.1px;
+   font-style: italic;
+   color: #323743;
+}
+.articles-details .left-bar {
+   width: 10px;
+   background: #588aee;
+   margin-right: 25px;
+}
+.articles-details .review-and-share {
+   height: 60px;
+   border-top: 1px solid #e4e4e4;
+   border-bottom: 1px solid #e4e4e4;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.articles-details .review-and-share {
+   font-size: 14px;
+   color: #323743;
+}
+.articles-details .review-and-share .review i {
+   color: #ffb900;
+}
+.articles-details .review-and-share .review i.last-star {
+   color: #dccca1;
+}
+.articles-details .review-and-share .share i {
+   margin-left: 10px;
+   color: #a9b0c4;
+}
+.articles-details .review-and-share i {
+   font-size: 12px;
+}
+.related-articles .title-h3,
+.related-articles .title-h4 {
+   color: #323743;
+}
+
+/* Articles Details */
 
 @media (max-width: 1352px) {
    .home-inventions-gallery {
