@@ -1,194 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <!-- font awesome
-                      =============================================== -->
-      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-      <!-- Bootstrap 
-            ========================================= -->
-      <link
-         rel="stylesheet"
-         href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-         crossorigin="anonymous"
-      />
-      <!-- Style 
-            ========================================= -->
-      <link rel="stylesheet" href="css/style.css" />
-      <title>Nofel</title>
-   </head>
-   <body>
-      <div class="layout">
-         <!-- header section
-      ================================================= -->
-         <header class="index-header">
-            <!-- navigation -->
-            <div class="main-container">
-               <nav class="navbar navbar-light p-0">
-                  <a class="navbar-brand" href="#">
-                     <h3 class="brand-logo">NOFEL</h3>
-                  </a>
-                  <div class="right-side">
-                     <button class="nav-widget-button search-icon btn d-none d-lg-inline">
-                        <i class="fa fa-search"></i>
-                     </button>
-                     <button class="nav-widget-button btn lang-button d-none d-lg-inline">
-                        En
-                     </button>
-                     <button class="nav-widget-button btn menu-button mr-0">
-                        <i class="fa fa-bars"></i>
-                        <span class="d-none d-md-inline">MENU </span>
-                     </button>
-                  </div>
-               </nav>
-            </div>
-            <!-- navigation end -->
 
-            <!-- text slider 
+<head>
+   <meta charset="UTF-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <!-- font awesome
+      =============================================== -->
+   <script src="./js/font-awsome/font-awsome.js"></script>
+
+   <!-- custom css 
+      ================================================-->
+   <link rel="stylesheet" href="css/style.css" />
+   <title>Nofel</title>
+</head>
+
+<body>
+   <div class="layout">
+      <!-- header section
+         ============================================== -->
+      <header class="index-header">
+         <!-- navigation -->
+         <div class="main-container">
+            <nav class="navbar navbar-light p-0">
+               <a class="navbar-brand" href="#">
+                  <h3 class="brand-logo">NOFEL</h3>
+               </a>
+               <div class="right-side">
+                  <button class="nav-widget-button search-icon btn d-none d-lg-inline">
+                     <i class="fa fa-search"></i>
+                  </button>
+                  <button class="nav-widget-button btn lang-button d-none d-lg-inline">
+                     En
+                  </button>
+                  <button class="nav-widget-button btn menu-button mr-0">
+                     <i class="fa fa-bars"></i>
+                     <span class="d-none d-md-inline">MENU </span>
+                  </button>
+               </div>
+            </nav>
+         </div>
+         <!-- navigation end -->
+
+         <!-- text slider 
         =================================================-->
-            <div class="slider-container">
-               <div class="slider-content">
-                  <h1 class="title-h1">Nofel</h1>
-                  <p class="paragraph">
-                     "Life is infinitely stranger than anything which the mind
-                     of man could invent." – Arthur Conan Doyle
+         <div class="slider-container">
+            <div class="slider-content">
+               <h1 class="title-h1">Nofel</h1>
+               <p class="paragraph">
+                  "Life is infinitely stranger than anything which the mind
+                  of man could invent." – Arthur Conan Doyle
+               </p>
+            </div>
+         </div>
+         <!-- text slider end -->
+
+         <!-- Explore start
+            ================================================= -->
+         <div class="explore">
+            <div class="row no-gutters">
+               <div class="col-md-9 col-lg-8 col-xl-7 mx-auto">
+                  <div class="explore-content">
+                     <div class="row no-gutters">
+                        <div class="col-sm-3 col-6 left-border">
+                           <a href="./home-articles.html" class="content-link">
+                              <div class="icon">
+                                 <img src="./images/icon_articles.png" alt="icon" />
+                              </div>
+                              <h5 class="title-h5">ARTICLES</h4>
+                           </a>
+                        </div>
+                        <div class="col-sm-3 col-6">
+                           <a href="home-projects.html" class="content-link">
+                              <div class="icon">
+                                 <img src="./images/icon_invention.png" alt="icon" />
+                              </div>
+                              <h5 class="title-h5">PROJECTS</h4>
+                           </a>
+                        </div>
+                        <div class="col-sm-3 col-6">
+                           <a href="./home-inventions.html" class="content-link">
+                              <div class="icon">
+                                 <img src="./images/icon_project.png" alt="icon" />
+                              </div>
+                              <h5 class="title-h5">INVENTIONS</h4>
+                           </a>
+                        </div>
+                        <div class="col-sm-3 col-6">
+                           <a href="./home-musics.html" class="content-link">
+                              <div class="icon">
+                                 <img src="./images/icon_music.png" alt="icon" />
+                              </div>
+                              <h5 class="title-h5">MUSICS</h4>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Explore end -->
+      </header>
+      <!-- header end  -->
+
+      <!-- footer
+      ================================================== -->
+      <footer class="my-5 my-md-0">
+         <div class="main-container">
+            <div class="row">
+               <div class="col-md-5 col-lg-4">
+                  <h3 class="brand-logo">NOFEL</h3>
+                  <p class="footer-paragraph">
+                     ©copyrights. 2019. by nofelizz
                   </p>
                </div>
-            </div>
-            <!-- text slider end -->
-
-            <!-- Explore start
-            ================================================= -->
-            <div class="explore">
-               <div class="row no-gutters">
-                  <div class="col-md-9 col-lg-8 col-xl-7 mx-auto">
-                     <div class="explore-content">
-                        <div class="row no-gutters">
-                           <div class="col-sm-3 col-6 left-border">
-                              <a
-                                 href="./home-articles.html"
-                                 class="content-link"
-                              >
-                                 <div class="icon">
-                                    <img
-                                       src="./images/icon_articles.png"
-                                       alt="icon"
-                                    />
-                                 </div>
-                                 <h5 class="title-h5">ARTICLES</h4>
-                              </a>
+               <div class="col-md-7 col-lg-8 align-self-center">
+                  <div class="row">
+                     <div class="col-lg-9 col-md-6 mb-4 mb-md-0">
+                        <div class="row">
+                           <div class="col-lg-4 pb-md-2 pb-lg-0">
+                              <a href="#" class="footer-link">Contact</a>
                            </div>
-                           <div class="col-sm-3 col-6">
-                              <a href="home-projects.html" class="content-link">
-                                 <div class="icon">
-                                    <img
-                                       src="./images/icon_invention.png"
-                                       alt="icon"
-                                    />
-                                 </div>
-                                 <h5 class="title-h5">PROJECTS</h4>
-                              </a>
+                           <div class="col-lg-4 pb-md-2 pb-lg-0">
+                              <a href="#" class="footer-link">Terms and Condition</a>
                            </div>
-                           <div class="col-sm-3 col-6">
-                              <a
-                                 href="./home-inventions.html"
-                                 class="content-link"
-                              >
-                                 <div class="icon">
-                                    <img
-                                       src="./images/icon_project.png"
-                                       alt="icon"
-                                    />
-                                 </div>
-                                 <h5 class="title-h5">INVENTIONS</h4>
-                              </a>
-                           </div>
-                           <div class="col-sm-3 col-6">
-                              <a href="./home-musics.html" class="content-link">
-                                 <div class="icon">
-                                    <img
-                                       src="./images/icon_music.png"
-                                       alt="icon"
-                                    />
-                                 </div>
-                                 <h5 class="title-h5">MUSICS</h4>
-                              </a>
+                           <div class="col-lg-4">
+                              <a href="#" class="footer-link">Privacy Policy</a>
                            </div>
                         </div>
+                     </div>
+                     <div class="col-lg-3 col-md-6 col-sm-6 col-xs-8">
+                        <ul class="footer-social-icons">
+                           <li>
+                              <a href="#"><i class="fab fa-facebook-square"></i></a>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fab fa-twitter"></i></a>
+                           </li>
+                           <li>
+                              <a href="#"><i class="fab fa-instagram"></i></a>
+                           </li>
+                           <li>
+                              <a href=""><i class="fab fa-youtube"></i></a>
+                           </li>
+                        </ul>
                      </div>
                   </div>
                </div>
             </div>
-            <!-- Explore end -->
-         </header>
-         <!-- header end  -->
+         </div>
+      </footer>
+      <!-- footer end -->
+   </div>
+</body>
 
-         <!-- footer
-      ================================================== -->
-         <footer class="my-5 my-md-0">
-            <div class="main-container">
-               <div class="row">
-                  <div class="col-md-5 col-lg-4">
-                     <h3 class="brand-logo">NOFEL</h3>
-                     <p class="footer-paragraph">
-                        ©copyrights. 2019. by nofelizz
-                     </p>
-                  </div>
-                  <div class="col-md-7 col-lg-8 align-self-center">
-                     <div class="row">
-                        <div class="col-lg-9 col-md-6 mb-4 mb-md-0">
-                           <div class="row">
-                              <div class="col-lg-4 pb-md-2 pb-lg-0">
-                                 <a href="#" class="footer-link">Contact</a>
-                              </div>
-                              <div class="col-lg-4 pb-md-2 pb-lg-0">
-                                 <a href="#" class="footer-link"
-                                    >Terms and Condition</a
-                                 >
-                              </div>
-                              <div class="col-lg-4">
-                                 <a href="#" class="footer-link"
-                                    >Privacy Policy</a
-                                 >
-                              </div>
-                           </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-8">
-                           <ul class="footer-social-icons">
-                              <li>
-                                 <a href="#"
-                                    ><img
-                                       src="./images/facebook-logo.png"
-                                       alt="icon"
-                                 /></a>
-                              </li>
-                              <li>
-                                 <a href="#"
-                                    ><img src="./images/twitter.png" alt="icon"
-                                 /></a>
-                              </li>
-                              <li>
-                                 <a href="#"
-                                    ><img
-                                       src="./images/instagram.png"
-                                       alt="icon"
-                                 /></a>
-                              </li>
-                              <li>
-                                 <a href="#"
-                                    ><img src="./images/youtube.png" alt="icon"
-                                 /></a>
-                              </li>
-                           </ul>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </footer>
-         <!-- footer end -->
-      </div>
-   </body>
 </html>
