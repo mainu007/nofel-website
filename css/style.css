@@ -61,9 +61,10 @@ img {
 .paragraph {
    font-family: "Poppins", sans-serif;
    font-size: 20px;
-   font-weight: 500;
-   line-height: 30px;
+   font-weight: 400;
+   line-height: 34px;
    letter-spacing: 0;
+   text-align: justify;
    color: #fff;
 }
 .tag-span {
@@ -172,8 +173,7 @@ footer .brand-logo {
 /* text slider */
 .slider-container {
    width: 100%;
-   height: 100%;
-   max-height: 436px;
+   height: 436px;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -181,7 +181,6 @@ footer .brand-logo {
 }
 .slider-container::before {
    content: "";
-   background: url(../images/illus.png);
    background-size: contain;
    background-position: center;
    background-repeat: no-repeat;
@@ -189,9 +188,12 @@ footer .brand-logo {
    height: 100%;
    position: absolute;
    z-index: 0;
-   opacity: 0.8;
 }
-
+.index-header .slider-container::before {
+   opacity: 0.8;
+   background: url(../images/illus.png);
+   background-position-x: center;
+}
 .slider-content {
    z-index: 1;
    text-align: center;
@@ -474,6 +476,17 @@ footer .footer-social-icons a {
 .home-inventions .explore .content-link.active * {
    opacity: 1;
 }
+@media (max-width: 1352px) {
+   .home-inventions-gallery {
+      height: auto !important;
+   }
+   .flex-order-1 {
+      order: 1;
+   }
+   .flex-order-2 {
+      order: 2;
+   }
+}
 /* home Inventions end */
 
 /* home musics
@@ -503,15 +516,26 @@ footer .footer-social-icons a {
 }
 /* home musics end */
 
+/* second header slider 
+==================================================*/
+.second-header {
+   width: 100%;
+   height: 730px;
+}
+.second-header .slider-content .paragraph {
+   font-size: 16px;
+   line-height: 28px;
+   opacity: 0.9;
+   margin-bottom: 25px;
+}
+
 /* Articles
 =================================================== */
 .articles-header {
-   width: 100%;
-   height: 730px;
    background: #588aee;
 }
 .articles-header .slider-container {
-   max-height: 378px;
+   height: 378px;
    margin-top: 30px;
    align-items: flex-end;
 }
@@ -521,12 +545,6 @@ footer .footer-social-icons a {
    background-repeat: no-repeat;
    background-position: center;
    opacity: 1;
-}
-.articles-header .slider-content .paragraph {
-   font-size: 16px;
-   line-height: 28px;
-   opacity: 0.9;
-   margin-bottom: 25px;
 }
 .articles-header .social-icons {
    max-width: 170px;
@@ -563,7 +581,7 @@ footer .footer-social-icons a {
    margin-bottom: 35px;
 }
 .post-content .paragraph {
-   width: 66%;
+   width: 75%;
    font-size: 18px;
    line-height: 36px;
    color: #5d6070;
@@ -636,7 +654,8 @@ footer .footer-social-icons a {
    color: #e7e8ef;
 }
 
-/* subscribe news */
+/* subscribe news 
+=============================================*/
 .subscribe-news {
    width: 100%;
    height: 394px;
@@ -738,6 +757,7 @@ footer .footer-social-icons a {
 @media (max-width: 767px) {
    .title-h1 {
       font-size: 45px;
+      letter-spacing: 4px;
    }
    .title-h2 {
       font-size: 28px;
@@ -748,10 +768,13 @@ footer .footer-social-icons a {
       padding-bottom: 50px;
    }
    .articles-header .slider-container {
-      padding: 0 15px;
+      padding: 0 30px;
+   }
+   .articles-header .slider-container::before {
+      background-size: auto;
    }
    .articles-post-container {
-      padding: 0 15px;
+      padding: 0 30px;
    }
    .post-date {
       font-size: 14px;
@@ -863,19 +886,104 @@ footer .footer-social-icons a {
    color: #323743;
 }
 
-/* Articles Details */
+/* Articles Details end */
 
-@media (max-width: 1352px) {
-   .home-inventions-gallery {
-      height: auto !important;
+/* Inventions 
+============================================= */
+.inventions-header {
+   background: #42cb79;
+}
+.inventions-header .illus-background {
+   height: 100%;
+   background: url("../images/invention.png");
+   background-repeat: no-repeat;
+   background-position-x: right;
+}
+.inventions-header .slider-container {
+   justify-content: flex-start;
+}
+.inventions-header .slider-content {
+   text-align: left;
+   padding-left: 80px;
+   padding-top: 60px;
+}
+.inventions-body {
+   padding: 140px 0;
+}
+.inventions-body .image-container {
+   position: relative;
+}
+.inventions-body .overlay-text {
+   position: absolute;
+   width: 70%;
+   height: calc(100% - 90px);
+   background: #fff;
+   top: 90px;
+   left: calc(100% - 130px);
+}
+.inventions-body .big-image {
+   padding-left: 130px;
+}
+.inventions-body .paragraph {
+   color: #42cb79;
+   margin-bottom: 8px;
+}
+.inventions-body .big-image .paragraph {
+   font-size: 18px;
+   padding-top: 80px;
+}
+.inventions-body .title-h3 {
+   line-height: 44px;
+   letter-spacing: 0.6px;
+   color: #262a37;
+   margin-bottom: 100px;
+}
+.inventions-body .small-image {
+   padding-left: 45px;
+}
+.inventions-body .small-image .paragraph {
+   padding-top: 50px;
+   font-size: 16px;
+}
+.inventions-body .title-h4 {
+   line-height: 40px;
+   letter-spacing: 0.48px;
+   color: #262a37;
+   margin-bottom: 80px;
+}
+.inventions-body .padding-y {
+   padding: 100px 0;
+}
+.inventions-body .overlay-text.content-left {
+   left: auto;
+   right: calc(100% - 130px);
+   padding-left: 0;
+   padding-right: 130px;
+   text-align: right;
+}
+.inventions-body .overlay-text.content-left .paragraph {
+   text-align: right;
+}
+.subscribe-news.inventions-subscribe {
+   background: #42cb79;
+}
+/* inventions end */
+
+/* responsive */
+@media (max-width: 767px) {
+   .inventions-header .slider-container {
+      justify-content: center;
    }
-   .flex-order-1 {
-      order: 1;
+   .inventions-header .slider-content {
+      text-align: center;
+      padding-left: 0;
    }
-   .flex-order-2 {
-      order: 2;
+   .inventions-header .illus-background {
+      background-position-x: center;
    }
 }
+
+/* Inventions end */
 
 /* responsive 
 ============================================== */
@@ -960,9 +1068,9 @@ footer .footer-social-icons a {
       width: 150px;
    }
    /* home page */
-   .navbar {
+   /* .navbar {
       height: 90px;
-   }
+   } */
    .index-header .title-h1 {
       font-size: 80px;
    }
@@ -1023,6 +1131,11 @@ footer .footer-social-icons a {
    .explore .content-link .icon {
       margin-bottom: 15px;
    }
+   /* home invention */
+   .home-invention-gallery-content {
+      max-width: 480px;
+      margin: 0 auto;
+   }
 }
 /* max-width 768px */
 @media only screen and (max-width: 767px) {
@@ -1031,11 +1144,11 @@ footer .footer-social-icons a {
    }
    /* home page */
    .main-container {
-      padding: 0 15px;
+      padding: 0 30px;
    }
    /* home articles */
    .home-article-gallery .home-article-gallery-container {
-      padding: 0 20px;
+      padding: 0 30px;
    }
    .home-article-gallery .overlay-text {
       padding-top: 10px;
@@ -1043,14 +1156,21 @@ footer .footer-social-icons a {
    .home-popup .head-title {
       width: 100%;
       justify-content: flex-end;
-      margin-right: 40px;
+      margin-right: 30px;
    }
    .home-article-gallery .text-content .title-h4 {
       padding-top: 5px;
    }
+   /* inventions */
+   .home-popup .head-title .title-h3 {
+      margin-left: 0;
+   }
 }
 /* max-width 576px */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
+   .paragraph {
+      width: 100% !important;
+   }
    .default-btn {
       width: 100%;
    }
@@ -1066,9 +1186,6 @@ footer .footer-social-icons a {
    }
    .read-more-link i img {
       width: 5px;
-   }
-   .home-popup .head-title {
-      margin-right: 20px;
    }
 }
 /* mx-width 440 */
