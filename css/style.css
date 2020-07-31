@@ -767,9 +767,6 @@ footer .footer-social-icons a {
       height: auto;
       padding-bottom: 50px;
    }
-   .articles-header .slider-container {
-      padding: 0 30px;
-   }
    .articles-header .slider-container::before {
       background-size: auto;
    }
@@ -1271,7 +1268,8 @@ footer .footer-social-icons a {
       font-size: 24px;
    }
    /* home page */
-   .main-container {
+   .main-container,
+   .slider-container {
       padding: 0 30px;
    }
    /* home articles */
@@ -1296,6 +1294,9 @@ footer .footer-social-icons a {
 }
 /* max-width 576px */
 @media only screen and (max-width: 575px) {
+   header.index-header {
+      height: auto;
+   }
    .paragraph {
       width: 100% !important;
    }
