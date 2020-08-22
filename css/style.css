@@ -15,8 +15,9 @@ img {
 .title-h1 {
    font-family: "Playfair Display", serif;
    font-size: 60px;
+   line-height: 90px;
    letter-spacing: 6px;
-   font-weight: 700;
+   font-weight: 900;
    color: #fff;
    margin-bottom: 25px;
 }
@@ -418,10 +419,10 @@ footer .footer-social-icons a {
    width: 100%;
 }
 
-.home-projects .image-container {
+.image-container {
    position: relative;
 }
-.home-projects .overlay-text {
+.overlay-text {
    position: absolute;
    left: 0;
    bottom: 0;
@@ -450,6 +451,9 @@ footer .footer-social-icons a {
 ============================================== */
 .home-inventions {
    background: #42cb79;
+}
+.home-inventions a:hover {
+   text-decoration: none;
 }
 .home-inventions .close-button {
    background: #4adc85;
@@ -530,6 +534,37 @@ footer .footer-social-icons a {
    opacity: 0.9;
    margin-bottom: 25px;
 }
+
+/* rectangle box background
+=============================================== */
+.rectangle-box {
+   position: absolute;
+   width: 240px;
+   height: 220px;
+   touch-action: none;
+   pointer-events: none;
+}
+.rectangle-box::after {
+   content: "";
+   width: 90px;
+   height: 80px;
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+.rectangle-box.box-a {
+   top: 0;
+   left: 0;
+}
+.rectangle-box.box-b {
+   top: 0;
+   left: 50%;
+}
+.rectangle-box.box-c {
+   right: 0;
+   bottom: 0;
+}
+/* rectangle end */
 
 /* Articles
 =================================================== */
@@ -1094,7 +1129,6 @@ footer .footer-social-icons a {
       }
    }
 }
-/* inventions end */
 
 /* responsive */
 @media (max-width: 767px) {
@@ -1191,6 +1225,305 @@ footer .footer-social-icons a {
    }
 }
 /* Inventions details end */
+
+/* projects
+============================================= */
+.projects-header {
+   position: relative;
+   background: #ffdd3d;
+}
+.projects-header::after {
+   content: "";
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url("../images/project.png");
+   background-repeat: no-repeat;
+   background-position: bottom;
+   touch-action: none;
+   pointer-events: none;
+}
+.title-h1.radial-background {
+   display: inline-block;
+   margin-bottom: 0;
+   background-image: radial-gradient(#cb8a8a 1px, transparent 1px);
+   background-clip: padding-box;
+   background-size: 15px 15px;
+   font-weight: 900;
+   padding-bottom: 30px;
+}
+.elevator-section {
+   margin-top: 140px;
+   margin-bottom: 100px;
+}
+.projects-section-1 {
+   position: relative;
+   padding-bottom: 180px;
+}
+.projects-section-1 .overlay-text {
+   padding-left: 35px;
+   padding-bottom: 30px;
+}
+.projects-section-1 .overlay-text .title-h4 {
+   font-family: "Poppins", sans-serif;
+   font-weight: 500;
+}
+.projects-section-1::after {
+   content: "";
+   width: 83.33%;
+   height: 50%;
+   background: #ffdd3d;
+   background-image: radial-gradient(#cb8a8a 3px, transparent 3px);
+   background-size: 50px 50px;
+   position: absolute;
+   left: 8.33%;
+   top: 25%;
+   z-index: -1;
+}
+
+/* rectangle modify */
+.projects-rectangle-box .rectangle-box {
+   background: #ffdf48;
+}
+.projects-rectangle-box .rectangle-box::after {
+   background: #ffe360;
+}
+
+.projects-section-1 .rectangle-box {
+   width: 250px;
+   height: 250px;
+   background: #ff6666;
+   z-index: -1;
+}
+.projects-section-1 .rectangle-box::after {
+   background: #ff6e6e;
+}
+.projects-section-1 .rectangle-box.box-1 {
+   top: -80px;
+   left: -90px;
+}
+.projects-section-1 .rectangle-box.box-1::after {
+   top: 0;
+   left: 0;
+}
+.projects-section-1 .rectangle-box.box-2 {
+   left: auto;
+   top: auto;
+   bottom: -80px;
+   right: -90px;
+}
+.projects-section-1 .rectangle-box.box-2::after {
+   top: auto;
+   left: auto;
+   bottom: 0;
+   right: 0;
+}
+.spacee-section {
+   position: relative;
+   margin-top: 170px;
+}
+.spacee-container {
+   height: 610px;
+   background: #37352e;
+   background-image: radial-gradient(#73726d 2px, transparent 2px);
+   background-size: 60px 60px;
+   display: flex;
+   align-items: center;
+}
+.spacee-text {
+   margin-left: 140px;
+   width: 100%;
+   max-width: 469px;
+   height: 243px;
+   background: #37352e;
+   padding: 50px 25px 0;
+   text-align: center;
+}
+.spacee-section .overlay-image {
+   position: absolute;
+   top: -170px;
+   left: 50%;
+   z-index: 1;
+}
+.spacee-section .title-h4 {
+   font-family: "Poppins", sans-serif;
+   font-weight: 600;
+}
+.spacee-section .spacee-text .title-h4 {
+   font-size: 24px;
+}
+.spacee-text .paragraph {
+   font-size: 16px;
+   line-height: 28px;
+   text-align: center;
+}
+.dynamo-section {
+   padding: 200px 0;
+}
+.dynamo-section .title-h4 {
+   font-family: "Poppins", sans-serif;
+}
+.dynamo-section .rectangle-box {
+   width: 250px;
+   height: 250px;
+   background: #ff6666;
+   z-index: -1;
+}
+.dynamo-section .rectangle-box::after {
+   background: #ff6e6e;
+}
+.dynamo-section .rectangle-box.box-2 {
+   top: -80px;
+   right: -90px;
+}
+.dynamo-section .rectangle-box.box-2::after {
+   top: 0;
+   right: 0;
+}
+.dynamo-section .rectangle-box.box-1 {
+   left: auto;
+   top: auto;
+   bottom: -80px;
+   right: -90px;
+}
+.dynamo-section .rectangle-box.box-1::after {
+   top: auto;
+   left: auto;
+   bottom: 0;
+   right: 0;
+}
+.dynamo-section .title-h4 {
+   font-weight: 600;
+}
+
+.spacee-section-2 .spacee-container {
+   justify-content: flex-end;
+   background: #ffdd3d;
+   background-image: radial-gradient(#cb8a8a 2px, transparent 2px);
+   background-size: 60px 60px;
+}
+.spacee-section-2 .spacee-text {
+   margin-left: 0;
+   margin-right: 140px;
+   background: #ffdd3d;
+}
+.spacee-section-2.spacee-section .overlay-image {
+   left: auto;
+   right: 50%;
+}
+.spacee-section-2 .rectangle-box {
+   width: 250px;
+   height: 250px;
+   background: #ff6666;
+   z-index: -1;
+   bottom: -80px;
+   left: -90px;
+}
+.spacee-section-2 .rectangle-box::after {
+   background: #ff6e6e;
+   top: auto;
+   right: auto;
+   left: 0;
+   bottom: 0;
+}
+
+.you-have-projects {
+   margin-top: 140px;
+   background: #ffdd3d;
+   height: 490px;
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+.you-have-projects .title-h1 {
+   letter-spacing: 1.8px;
+   color: #505050;
+}
+.you-have-projects .paragraph {
+   font-size: 22px;
+   line-height: 40px;
+   letter-spacing: 0.44px;
+   color: #505050;
+}
+
+/* responsive */
+@media (max-width: 1350px) {
+   .you-have-projects .title-h1 {
+      font-size: 55px;
+      letter-spacing: 1.6px;
+   }
+}
+@media (max-width: 1300px) {
+   .spacee-text {
+      margin-left: 50px;
+   }
+   .spacee-section .overlay-image {
+      top: -100px;
+   }
+   .spacee-section-2 .spacee-text {
+      margin-right: 50px;
+   }
+   .spacee-section-2.spacee-section .overlay-image {
+      top: -100px;
+   }
+}
+@media (max-width: 1100px) {
+   .you-have-projects .title-h1 {
+      font-size: 50px;
+      letter-spacing: 1.5px;
+   }
+}
+@media (max-width: 991px) {
+   .spacee-section .overlay-image {
+      left: 45%;
+   }
+   .spacee-section-2.spacee-section .overlay-image {
+      right: 45%;
+   }
+   .projects-section-1 {
+      padding-bottom: 90px;
+   }
+}
+@media (max-width: 767px) {
+   .projects-section-1 {
+      padding-bottom: 0px;
+   }
+   .spacee-container {
+      height: 400px;
+      justify-content: center;
+   }
+   .spacee-text {
+      height: auto;
+      padding: 20px;
+      margin-left: 0;
+   }
+   .spacee-section-2 .spacee-container {
+      justify-content: center;
+   }
+   .spacee-section-2 .spacee-text {
+      margin-right: 0;
+   }
+   .spacee-section-2.spacee-section {
+      margin-top: 0;
+   }
+   .spacee-section .overlay-image {
+      position: static;
+   }
+   .dynamo-section {
+      padding: 170px 0;
+   }
+   .you-have-projects .title-h1 {
+      font-size: 40px;
+      letter-spacing: 1.2px;
+      line-height: 60px;
+   }
+   .you-have-projects {
+      margin-top: 100px;
+   }
+}
+/* projects end */
 
 /* responsive 
 ============================================== */
@@ -1352,6 +1685,7 @@ footer .footer-social-icons a {
    /* home page */
    .main-container,
    .slider-container {
+      overflow: hidden;
       padding: 0 30px;
    }
    /* home articles */
@@ -1372,6 +1706,10 @@ footer .footer-social-icons a {
    /* inventions */
    .home-popup .head-title .title-h3 {
       margin-left: 0;
+   }
+   /* rectangle box */
+   .rectangle-box.box-b {
+      display: none;
    }
 }
 /* max-width 576px */
